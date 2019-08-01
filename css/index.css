@@ -138,24 +138,82 @@ a,
 address {
   font-size: 1.6rem;
 }
+h1 {
+  font-size: 4rem;
+  margin: 0 1rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding: 0.5rem 0;
+}
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 501px) {
   .container {
     max-width: 1000px;
   }
 }
+.body-img img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 501px) {
+  .body-content {
+    flex-direction: row-reverse;
+  }
+}
 nav {
-  background: blue;
+  background: darkblue;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  align-items: center;
+}
+@media (min-width: 501px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #999999;
+  padding: 0.5rem;
 }
 nav h1 {
   color: white;
+  padding: 1rem;
 }
 nav .navlinks {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+nav .navlinks a {
+  text-decoration: none;
+  color: #999999;
+  padding: 0.5rem;
+}
+@media (min-width: 501px) {
+  nav .navlinks {
+    flex-direction: row;
+  }
+}
+.header-img img {
+  width: 100%;
+  height: auto;
+}
+.body {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 501px) {
+  .body {
+    width: 100%;
+  }
 }

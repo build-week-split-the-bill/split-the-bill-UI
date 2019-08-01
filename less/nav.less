@@ -1,18 +1,47 @@
 nav {
     
     background: @nav-bg-color;
-    
-
-    h1 {
-        color: @nav-txt-color
-    }
-
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    
+    @media @desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-link-color;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        color: @nav-txt-color;
+        padding: 1rem;
+    }
+
     
     .navlinks {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        a {
+            text-decoration: none;
+            color: @nav-link-color;
+            padding: 0.5rem;
+        }
+
+        @media @desktop {
+            flex-direction: row;
+            
+        }
+
+        
     }
+    
 }
