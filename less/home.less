@@ -27,15 +27,12 @@ header {
 }
 
 .body-content {
-    border: 1px solid red;
+    border: 1px solid @border-color;
     
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 
-    div {
-        border: 1px solid green;
-    }
 
     @media @tablet {
         flex-direction: row;
