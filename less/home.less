@@ -12,8 +12,9 @@ header {
 
 .header-txt {
     position: absolute;
-    top: 30%;
-    right: 20%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -27,7 +28,7 @@ header {
 }
 
 .body-content {
-    border: 1px solid @border-color;
+    //border: 1px solid @border-color;
     
     display: flex;
     flex-flow: column wrap;
@@ -66,6 +67,7 @@ header {
 
 .body-img {
     width: 100%;
+    
 
     img {
         width: 100%;
@@ -79,6 +81,7 @@ header {
     }
 
     @media @desktop {
-        flex-basis: 100%;
+        width: 30%;
+        height: 300px;
     }
 }
