@@ -142,6 +142,7 @@ address {
 h1 {
   font-size: 4rem;
   margin: 0 1rem;
+  color: white;
 }
 h2 {
   font-size: 3.2rem;
@@ -151,6 +152,15 @@ h2 {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+button {
+  background: white;
+  color: #3a1c51;
+  border: 2px #3a1c51 solid;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
 }
 .nav-container {
   width: 100%;
@@ -180,7 +190,6 @@ nav a {
   padding: 0.5rem;
 }
 nav h1 {
-  color: white;
   padding: 1rem;
 }
 nav .navlinks {
@@ -213,8 +222,9 @@ header {
 }
 .header-txt {
   position: absolute;
-  top: 30%;
-  right: 20%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .body {
   width: 90%;
@@ -227,7 +237,6 @@ header {
   }
 }
 .body-content {
-  border: 1px solid #666666;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -269,6 +278,7 @@ header {
 }
 @media (min-width: 801px) {
   .body-img {
-    flex-basis: 100%;
+    width: 30%;
+    height: 300px;
   }
 }
